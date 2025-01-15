@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('/src/fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Crimsonpro';
+    src: url('/src/fonts/CrimsonPro-VariableFont_wght.ttf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CrimsonPro';
+    src: url('/src/fonts/CrimsonPro-Italic-VariableFont_wght.ttf');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/src/fonts/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'GreatVibes';
+    src: url('/src/fonts/GreatVibes-Regular.ttf');
+}
+@font-face {
+    font-family: 'Ms Madi';
+    src: url('/src/fonts/MsMadi-Regular.ttf');
+}
+
+p {
+    font-family: Montserrat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background: rgb(255, 255 ,255);
+    --color-primary: rgb(255, 150, 248);
+    --color-secondary: rgb(172, 255, 183);
+    --color-border: #C0C0C0;
+
+    --color-text: #333333;
+    --color-text-secondary: #555555;
+
+    --font-header: CrimsonPro;
+    --font-normal: Monsterrat;
+
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+
+    --radius-small: 4px;
+    --radius-normal: 8px;
+    --radius-large: 16px;
+
+    --size-icon-small: 1rem;
+    --size-icon-medium: 2rem;
+    --size-icon-large: 3rem;
+
+    --site-width: 60%;
+}
+
+body {
+    background-color: var(--color-background);
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header), sans-serif;
+    font-style: italic;
+    color: var(--color-text)
+}
+
+p {
+    color: var(--color-text-secondary);
+}
