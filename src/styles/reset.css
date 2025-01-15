@@ -19,6 +19,13 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+button {
+    appearance: none;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
