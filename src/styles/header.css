@@ -1,0 +1,86 @@
+header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-large);
+    padding: 1rem;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.header-content {
+    width: var(--site-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-large);
+}
+header h2 {
+    font-family: "Ms Madi";
+    font-style: normal;
+    font-size: 3em;
+}
+nav {
+    margin-left: auto;
+}
+nav ul {
+    display: flex;
+    gap: var(--spacing-large);
+}
+.nav-link {
+    position: relative;
+
+    font-family: var(--font-header);
+    font-style: italic;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: var(--color-font);
+    text-transform: uppercase;
+}
+.nav-link:hover {
+
+}
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--color-primary);
+    transition: 0.2s ease-out;
+}
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.styled-link span {
+    position: relative;
+    z-index: 2;
+}
+.styled-link {
+    position: relative;
+    padding: 0.5em 1em;
+    overflow: hidden;
+
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-normal);
+    color: var(--color-primary);
+    font-weight: 600;
+    transition: color 0.1s ease-out;
+}
+.styled-link:hover {
+    color: var(--color-background);
+}
+.styled-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--color-primary);
+    transition: 0.2s ease-out;
+}
+.styled-link:hover::before {
+    width: 100%;
+}
