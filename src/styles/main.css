@@ -36,12 +36,13 @@ p {
 :root {
     --color-background: rgb(255, 255 ,255);
     --color-primary: rgb(255, 150, 248);
-    --color-secondary: rgb(172, 255, 183);
+    --color-secondary: rgb(237, 213, 150);
     --color-border: #C0C0C0;
 
     --color-text: #333333;
     --color-text-secondary: #555555;
 
+    --font-section: "Ms Madi";
     --font-header: CrimsonPro;
     --font-normal: Monsterrat;
 
@@ -61,8 +62,8 @@ p {
 }
 
 body {
-    background-color: var(--color-background);
     line-height: 1.4;
+    background-color: var(--color-background);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,4 +74,41 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     color: var(--color-text-secondary);
+}
+
+section h2 {
+    padding: 0 2rem;
+
+    background-color: var(--color-background);
+
+    font-family: var(--font-section);
+    color: var(--font-color);
+    font-size: 4em;
+    text-align: center;
+}
+
+section:not(#hero) {
+    margin: var(--spacing-large) 0;
+}
+
+.section-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 100%;
+    height: 3px;
+    z-index: -1;
+
+    background-image: linear-gradient(to right, var(--color-background), var(--color-secondary), var(--color-background));
 }
