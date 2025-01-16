@@ -1,4 +1,8 @@
 header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: var(--color-background);
     display: flex;
     align-items: center;
     gap: var(--spacing-large);
