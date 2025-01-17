@@ -35,7 +35,7 @@ p {
 
 :root {
     --color-background: rgb(255, 255 ,255);
-    --color-primary: rgb(255, 150, 248);
+    --color-primary: rgb(255, 144, 248);
     --color-secondary: rgb(237, 213, 150);
     --color-border: #C0C0C0;
 
@@ -58,6 +58,8 @@ p {
     --size-icon-medium: 2rem;
     --size-icon-large: 3rem;
 
+    --shadow-normal: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     --site-width: 60%;
 }
 
@@ -70,6 +72,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-header), sans-serif;
     font-style: italic;
     color: var(--color-text)
+}
+
+h3 {
+    font-size: 2.5em;
 }
 
 p {
@@ -97,6 +103,7 @@ section:not(#hero) {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: var(--spacing-large) 0;
 }
 
 .section-header::before {
