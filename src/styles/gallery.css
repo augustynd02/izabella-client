@@ -17,6 +17,10 @@
     padding: var(--spacing-medium);
     z-index: 2;
     background-color: var(--color-background);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .description p {
@@ -44,17 +48,39 @@
 .slideshow-container button {
     position: absolute;
     z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    transition: background-color 0.2s;
+}
+.slideshow-container button:hover {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+.slideshow-container button img {
+    width: 50%;
 }
 .slideshow-control__left {
-    left: 0;
+    left: var(--spacing-small);
     top: 50%;
-    translate: transformY(-50%);
+    transform: translateY(-50%);
 }
 
 .slideshow-control__right {
-    right: 0;
+    right: var(--spacing-small);
     top: 50%;
-    translate: transformY(-50%);
+    transform: translateY(-50%);
 }
 
 .carousel-navigation {
@@ -66,18 +92,22 @@
 
     display: flex;
     align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    border-radius: 9999px;
 }
 
 .carousel-dot {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     border-radius: 9999px;
-    background-color: var(--color-text);
+    background-color: var(--color-secondary);
 }
 
 .current-dot {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background-color: var(--color-primary);
 
     animation: 0.3s jump forwards;

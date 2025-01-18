@@ -35,7 +35,7 @@ p {
 
 :root {
     --color-background: rgb(255, 255 ,255);
-    --color-primary: rgb(255, 144, 248);
+    --color-primary: rgb(255, 174, 250);
     --color-secondary: rgb(237, 213, 150);
     --color-border: #C0C0C0;
 
@@ -49,6 +49,7 @@ p {
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
     --spacing-large: 2rem;
+    --spacing-section: 4rem;
 
     --radius-small: 4px;
     --radius-normal: 8px;
@@ -103,7 +104,7 @@ section:not(#hero) {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: var(--spacing-large) 0;
+    margin: var(--spacing-section) 0;
 }
 
 .section-header::before {
