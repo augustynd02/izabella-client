@@ -29,6 +29,9 @@
     background-color: var(--color-background);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.description h3 {
+    text-align: center;
+}
 .description p {
     margin: var(--spacing-small) 0;
 }
