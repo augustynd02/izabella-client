@@ -58,8 +58,6 @@
 #oferta .item ul {
     display: flex;
     flex-direction: column;
-
-    padding: 1rem 0;
     margin-bottom: var(--spacing-medium);
 }
 
