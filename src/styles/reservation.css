@@ -1,0 +1,114 @@
+#rezerwacja {
+
+}
+
+.reservation-container {
+    width: var(--site-width);
+    margin: 0 auto;
+    display: flex;
+}
+
+.image-container {
+    width: 50%;
+    background-image: url(../assets/images/certyfikat-full.jpg);
+    background-size: cover;
+}
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#rezerwacja form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 2rem;
+}
+
+.input-group {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 0.5rem;
+    margin-left: 2px;
+
+    background-color: white;
+
+    transition: 0.2s;
+}
+.input-group input {
+    height: 2rem;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid var(--color-border);
+    transition: 0.2s;
+    width: 100%;
+}
+.input-group input[type="datetime-local"] {
+    width: min-content;
+}
+.input-group input:focus {
+    border: 2px solid var(--color-primary);
+}
+.input-group:focus-within label {
+    color: var(--color-primary);
+}
+.input-group:focus-within label,
+.input-group:has(input:not(:placeholder-shown)) label {
+    transform: translateY(-50%) scale(0.8);
+    top: 0;
+}
+
+.input-group textarea {
+    height: 8rem;
+    resize: none;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid var(--color-border);
+    transition: 0.2s;
+    width: 100%;
+}
+.input-group:has(textarea) label {
+    top: 1rem;
+    left: 0;
+}
+.input-group:has(textarea:not(:placeholder-shown)) label {
+    transform: translateY(-50%) scale(0.8);
+    top: 0;
+}
+
+form button {
+    box-sizing: border-box;
+    position: relative;
+    background-color: var(--color-primary);
+    width: 75%;
+    padding: 1rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: var(--radius-normal);
+    border-bottom: 4px solid rgb(252, 164, 244);
+    box-shadow: rgb(252, 164, 244) 0px 4px 0px;
+    transition: 0.2s;
+}
+
+form button:hover {
+    transform: translateY(-4px);
+    box-shadow: rgb(252, 164, 244) 0px 8px 0px;
+}
+
+form button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
