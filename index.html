@@ -194,26 +194,35 @@
             </div>
             <form action="" method="POST">
                 <h2>Zarezerwuj wizytę</h2>
-                <div class="input-group">
-                    <label for="email">Adres e-mail</label>
-                    <input type="email" name="email" id="email" placeholder=" ">
-                </div>
-                <div class="input-group">
-                    <label for="phone">Numer telefonu</label>
-                    <input type="number" name="phone" id="phone" placeholder=" ">
+                <div class="inputs-row">
+
+                    <div class="input-group">
+                        <label for="email">Adres e-mail</label>
+                        <input type="email" name="email" id="email" placeholder=" ">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Numer telefonu</label>
+                        <input type="number" name="phone" id="phone" placeholder=" ">
+                    </div>
                 </div>
                 <div class="input-group">
                     <label for="usluga">Usługa</label>
                     <input type="text" name="usluga" id="usluga" placeholder=" ">
                 </div>
                 <div class="input-group">
-                    <label for="termin">Termin</label>
-                    <input type="datetime-local" name="termin" id="termin">
-                </div>
-                <div class="input-group">
                     <label for="comment">Uwagi &#40;opcjonalnie&#41;</label>
                     <textarea name="comment" id="comment" placeholder=" "></textarea>
                 </div>
+                <div class="input-group">
+                    <label for="termin">Termin</label>
+                    <input type="datetime-local" name="termin" id="termin">
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" name="zgoda" id="zgoda" required />
+                    <label for="zgoda">Wyrażam zgodę na przechowywanie i przetwarzanie danych podanych w powyższym formularzu w celach kontaktowych wedle <a href="/polityka-prywatnosci">polityki prywatności.</a></label>
+                </div>
+
 
                 <button type="submit">Rezerwuj</button>
             </form>

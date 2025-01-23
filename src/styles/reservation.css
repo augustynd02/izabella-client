@@ -1,16 +1,16 @@
-#rezerwacja {
-
-}
-
 .reservation-container {
     width: var(--site-width);
     margin: 0 auto;
+
     display: flex;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .image-container {
     width: 50%;
-    background-image: url(../assets/images/certyfikat-full.jpg);
+
+    background-image: url('https://img.freepik.com/premium-photo/elegant-deep-burgundy-nails-displayed-alongside-delicate-white-flowers_87742-41278.jpg?w=740');
     background-size: cover;
 }
 .image-container img {
@@ -20,12 +20,14 @@
 
 #rezerwacja form {
     width: 50%;
+    padding: 2rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 
-    padding: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .input-group {
@@ -33,7 +35,6 @@
     width: 75%;
     margin: 0 auto;
 }
-
 .input-group label {
     position: absolute;
     top: 50%;
@@ -46,15 +47,16 @@
     transition: 0.2s;
 }
 .input-group input {
+    width: 100%;
     height: 2rem;
     padding: 1rem;
+
     outline: none;
     border: 2px solid var(--color-border);
     transition: 0.2s;
-    width: 100%;
 }
 .input-group input[type="datetime-local"] {
-    width: min-content;
+    width: 50%;
 }
 .input-group input:focus {
     border: 2px solid var(--color-primary);
@@ -67,7 +69,6 @@
     transform: translateY(-50%) scale(0.8);
     top: 0;
 }
-
 .input-group textarea {
     height: 8rem;
     resize: none;
@@ -76,6 +77,9 @@
     border: 2px solid var(--color-border);
     transition: 0.2s;
     width: 100%;
+}
+.input-group textarea:focus {
+    border: 2px solid var(--color-primary);
 }
 .input-group:has(textarea) label {
     top: 1rem;
@@ -86,29 +90,60 @@
     top: 0;
 }
 
+.inputs-row {
+    width: 75%;
+
+    display: flex;
+    gap: var(--spacing-small);
+}
+
+.checkbox-group {
+    width: 75%;
+
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-small);
+}
+.checkbox-group input[type="checkbox"] {
+    transform: scale(1.5);
+    accent-color: var(--color-primary);
+}
+.checkbox-group input[type="checkbox"]::after {
+    color: white;
+}
+.checkbox-group label {
+    font-size: 0.7em;
+    font-family: Montserrat;
+}
+.checkbox-group label a {
+    color: black;
+    font-weight: bold;
+}
+
 form button {
-    box-sizing: border-box;
     position: relative;
-    background-color: var(--color-primary);
     width: 75%;
     padding: 1rem;
+
+    background-color: var(--color-primary);
+    border-radius: var(--radius-normal);
+    border-bottom: 4px solid rgb(252, 164, 244);
+    box-shadow: rgb(252, 164, 244) 0px 4px 0px;
+
     color: white;
     font-weight: 500;
     font-size: 1.2em;
     text-transform: uppercase;
+
     cursor: pointer;
-    border-radius: var(--radius-normal);
-    border-bottom: 4px solid rgb(252, 164, 244);
-    box-shadow: rgb(252, 164, 244) 0px 4px 0px;
     transition: 0.2s;
 }
-
 form button:hover {
     transform: translateY(-4px);
     box-shadow: rgb(252, 164, 244) 0px 8px 0px;
 }
-
 form button:active {
     transform: translateY(4px);
     box-shadow: none;
 }
+
