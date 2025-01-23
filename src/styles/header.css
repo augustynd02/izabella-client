@@ -88,3 +88,15 @@ nav ul {
 .styled-link:hover::before {
     width: 100%;
 }
+
+@media screen and (max-width: 1600px) {
+    .header-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header nav {
+        display: none;
+    }
+}

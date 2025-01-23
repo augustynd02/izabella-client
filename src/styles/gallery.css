@@ -134,3 +134,16 @@
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 800px) {
+    .gallery {
+        flex-direction: column !important;
+        border-bottom: 2px solid var(--color-secondary);
+    }
+    .gallery .description {
+        width: 100%;
+    }
+    .gallery .slideshow-container {
+        width: 100%;
+    }
+}

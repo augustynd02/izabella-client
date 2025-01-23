@@ -13,6 +13,7 @@
 .contact-info-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
     background-color: var(--color-primary);
 }
@@ -37,6 +38,7 @@
     text-transform: uppercase;
 }
 .contact-subsection p {
+    flex: 1;
     font-size: 0.9em;
     color: var(--color-text-secondary);
 }
@@ -72,7 +74,7 @@
 }
 
 .map-container {
-    flex: 1;
+    width: 100%;
 
     border: 1px solid var(--color-border);
 }
@@ -81,4 +83,19 @@
     height: 100%;
 
     border: none;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-container {
+        flex-direction: column-reverse;
+    }
+    .contact-info-container {
+        flex-direction: row;
+    }
+    .contact-subsection {
+        flex: 1;
+    }
+    .map-container {
+        height: 400px;
+    }
 }

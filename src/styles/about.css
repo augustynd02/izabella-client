@@ -50,3 +50,15 @@
     font-size: 1em;
     margin: var(--spacing-medium) 0;
 }
+
+@media screen and (max-width: 800px) {
+    .about-container {
+        flex-direction: column;
+    }
+    .about-container .image-container {
+        width: 100%;
+    }
+    .about-container .content-container {
+        width: 100%;
+    }
+}

@@ -59,6 +59,8 @@ p {
     --size-icon-medium: 2rem;
     --size-icon-large: 3rem;
 
+    --size-font-section: clamp(2em, 4vw, 4em);
+
     --shadow-normal: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     --site-width: 60%;
@@ -95,7 +97,7 @@ section h2 {
 
     font-family: var(--font-section);
     color: var(--font-color);
-    font-size: 4em;
+    font-size: var(--size-font-section);
     text-align: center;
 }
 
@@ -124,4 +126,10 @@ section:not(#hero) {
     z-index: -1;
 
     background-image: linear-gradient(to right, var(--color-background), var(--color-secondary), var(--color-background));
+}
+
+@media screen and (max-width: 1300px) {
+    :root {
+        --site-width: 90%;
+    }
 }

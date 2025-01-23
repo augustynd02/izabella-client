@@ -35,8 +35,8 @@
     z-index: 2;
 
     opacity: 0;
-    animation: appear 1s ease-out forwards;
-    animation-delay: 0.5s;
+    animation: appear 0s ease-out forwards;
+    animation-delay: 0s;
 }
 
 @keyframes appear {
@@ -53,4 +53,20 @@
 .hero-content img {
     width: min(100%, 512px);
     z-index: 10;
+}
+
+.hero-container h1 {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    z-index: 2;
+    font-size: 1.5em;
+    font-family: var(--font-header);
 }

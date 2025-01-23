@@ -26,9 +26,19 @@ footer {
     gap: var(--spacing-small);
 }
 .footer-icons a {
-    width: 48px;
+    width: 40px;
     border-radius: var(--radius-normal);
 }
 .footer-icons img {
     border-radius: var(--radius-normal);
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .footer-icons {
+        justify-content: flex-start;
+    }
 }

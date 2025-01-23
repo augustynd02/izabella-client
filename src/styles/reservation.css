@@ -147,3 +147,17 @@ form button:active {
     box-shadow: none;
 }
 
+@media screen and (max-width: 800px) {
+    .reservation-container {
+        flex-direction: column;
+    }
+    .reservation-container .image-container {
+        height: 300px;
+        width: 100%;
+        background-position: center;
+    }
+    #rezerwacja .reservation-container form {
+        width: 100%;
+    }
+}
+
