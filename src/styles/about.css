@@ -47,8 +47,10 @@
 }
 
 .about-container .content-container p {
-    font-size: 1em;
     margin: var(--spacing-medium) 0;
+
+    font-size: 1em;
+    text-align: justify;
 }
 
 @media screen and (max-width: 800px) {
@@ -60,5 +62,10 @@
     }
     .about-container .content-container {
         width: 100%;
+    }
+
+    .about-container .image-container::before {
+        width: calc(100% + 2rem);
+        left: -1rem;
     }
 }

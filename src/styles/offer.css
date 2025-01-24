@@ -85,6 +85,9 @@
     font-size: 1.2em;
 }
 
+.tags {
+    display: flex;
+}
 .tag {
     margin: 0 4px;
     padding: 2px 10px;
@@ -126,3 +129,19 @@
     }
 }
 
+
+@media screen and (max-width: 600px) {
+    #oferta .item-container .item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .offer-element {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer-element h4 {
+        margin: 0;
+    }
+}

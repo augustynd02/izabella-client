@@ -59,7 +59,7 @@ p {
     --size-icon-medium: 2rem;
     --size-icon-large: 3rem;
 
-    --size-font-section: clamp(2em, 4vw, 4em);
+    --size-font-section: 4em;
 
     --shadow-normal: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -96,8 +96,8 @@ section h2 {
     background-color: var(--color-background);
 
     font-family: var(--font-section);
-    color: var(--font-color);
-    font-size: var(--size-font-section);
+    color: var(--size-font-section);
+    font-size: 3.5em;
     text-align: center;
 }
 

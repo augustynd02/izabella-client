@@ -161,3 +161,16 @@ form button:active {
     }
 }
 
+@media screen and (max-width: 600px) {
+    #rezerwacja form {
+        padding: 1rem;
+    }
+    #rezerwacja form h2 {
+        font-size: 3em;
+        padding: 0;
+    }
+    .inputs-row {
+        flex-direction: column;
+        width: 100%;
+    }
+}

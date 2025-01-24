@@ -38,9 +38,11 @@
     text-transform: uppercase;
 }
 .contact-subsection p {
-    flex: 1;
     font-size: 0.9em;
     color: var(--color-text-secondary);
+}
+.contact-subsection:not(.social) p {
+    flex: 1;
 }
 .contact-subsection:hover > .contact-icon {
     background-color: var(--color-secondary);
