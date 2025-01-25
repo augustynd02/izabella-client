@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="/src/styles/footer.css">
     <script type="module" src="/src/scripts/main.js" defer></script>
     <script type="module" src="/src/scripts/gallery.js" defer></script>
+    <script type="module" src="/src/scripts/mobileMenu.js"></script>
+    <script type="module" src="/src/scripts/animations.js"></script>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
@@ -26,7 +28,17 @@
     <header>
         <div class="header-content">
             <h2>IzaBella</h2>
-            <nav>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="#o-mnie" class="nav-link">O mnie</a></li>
+                    <li><a href="#oferta" class="nav-link">Oferta</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                    <li><a href="#rezerwacja" class="nav-link styled-link"><span>Zarezerwuj wizytę!</span></a></li>
+                </ul>
+            </nav>
+            <button type="button" class="menu"><span class="material-icons-outlined">menu</span></button>
+            <nav class="mobile">
                 <ul>
                     <li><a href="#o-mnie" class="nav-link">O mnie</a></li>
                     <li><a href="#oferta" class="nav-link">Oferta</a></li>
