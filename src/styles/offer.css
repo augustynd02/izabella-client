@@ -44,6 +44,13 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-normal);
+
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.item:nth-child(2) {
+    animation-delay: 0.2s;
 }
 
 #oferta .item h3 {
