@@ -87,6 +87,7 @@ nav.desktop ul {
     width: 0;
     background-color: var(--color-primary);
     transition: 0.2s ease-out;
+    z-index: -1;
 }
 
 .styled-link:hover::before {
