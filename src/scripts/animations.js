@@ -38,7 +38,6 @@ const observer = new IntersectionObserver((entries, observer) => {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.8 });
+  }, { threshold: 0.5 });
 
-const allItems = [...offerItems, ...contactSubsections];
-allItems.forEach(element => observer.observe(element));
+offerItems.forEach(element => observer.observe(element));
