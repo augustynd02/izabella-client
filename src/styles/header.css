@@ -19,19 +19,23 @@ header {
     align-items: center;
     gap: var(--spacing-large);
 }
+
 header h2 {
     font-family: "Ms Madi";
     font-style: normal;
     font-size: 3em;
     margin-right: auto;
 }
+
 nav {
     margin-left: auto;
 }
+
 nav.desktop ul {
     display: flex;
     gap: var(--spacing-large);
 }
+
 .nav-link {
     position: relative;
 
@@ -42,9 +46,7 @@ nav.desktop ul {
     color: var(--color-font);
     text-transform: uppercase;
 }
-.nav-link:hover {
 
-}
 .nav-link::before {
     content: "";
     position: absolute;
@@ -55,14 +57,11 @@ nav.desktop ul {
     background-color: var(--color-primary);
     transition: 0.2s ease-out;
 }
+
 .nav-link:hover::before {
     width: 100%;
 }
 
-.styled-link span {
-    position: relative;
-    z-index: 2;
-}
 .styled-link {
     position: relative;
     padding: 0.5em 1em;
@@ -74,9 +73,11 @@ nav.desktop ul {
     font-weight: 600;
     transition: color 0.1s ease-out;
 }
+
 .styled-link:hover {
     color: var(--color-background);
 }
+
 .styled-link::before {
     content: "";
     position: absolute;
@@ -87,6 +88,7 @@ nav.desktop ul {
     background-color: var(--color-primary);
     transition: 0.2s ease-out;
 }
+
 .styled-link:hover::before {
     width: 100%;
 }

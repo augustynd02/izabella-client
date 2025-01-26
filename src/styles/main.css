@@ -2,35 +2,32 @@
     font-family: 'PlayfairDisplay';
     src: url('/src/fonts/PlayfairDisplay-VariableFont_wght.ttf');
 }
+
 @font-face {
     font-family: 'Crimsonpro';
     src: url('/src/fonts/CrimsonPro-VariableFont_wght.ttf');
     font-style: normal;
 }
+
 @font-face {
     font-family: 'CrimsonPro';
     src: url('/src/fonts/CrimsonPro-Italic-VariableFont_wght.ttf');
     font-style: italic;
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url('/src/fonts/Montserrat-VariableFont_wght.ttf');
 }
+
 @font-face {
     font-family: 'GreatVibes';
     src: url('/src/fonts/GreatVibes-Regular.ttf');
 }
+
 @font-face {
     font-family: 'Ms Madi';
     src: url('/src/fonts/MsMadi-Regular.ttf');
-}
-
-p {
-    font-family: Montserrat;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 :root {
@@ -44,7 +41,7 @@ p {
 
     --font-section: "Ms Madi";
     --font-header: CrimsonPro;
-    --font-normal: Monsterrat;
+    --font-normal: Montserrat;
 
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
@@ -76,10 +73,11 @@ body {
     color: var(--color-text);
 }
 
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-header), sans-serif;
     font-style: italic;
-    color: var(--color-text)
+    color: var(--color-text);
 }
 
 h3 {
@@ -87,6 +85,7 @@ h3 {
 }
 
 p {
+    font-family: var(--font-normal);
     color: var(--color-text-secondary);
 }
 
