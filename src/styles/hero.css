@@ -55,3 +55,9 @@
     font-size: 1.5em;
     font-family: var(--font-header);
 }
+
+@media screen and (max-width: 600px) {
+    .hero-content {
+        width: 80%;
+    }
+}
