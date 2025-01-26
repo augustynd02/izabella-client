@@ -21,6 +21,7 @@
     width: 40%;
     padding: var(--spacing-medium);
     z-index: 2;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;

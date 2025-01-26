@@ -21,13 +21,14 @@ const galleryTextContainers = document.querySelectorAll('.description')
 const galleryObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        contactSubsections.forEach(node => {
-            node.classList.add('appear');
-        })
+        const galleryTexts = entry.target.querySelectorAll('p');
+        galleryTexts.forEach(text => text.classList.add('appear'));
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.5 });
+
+  galleryTextContainers.forEach(container => galleryObserver.observe(container));
 
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -39,5 +40,5 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
   }, { threshold: 0.8 });
 
-const allItems = [...offerItems, ...contactSubsections, ...galleryTexts];
+const allItems = [...offerItems, ...contactSubsections];
 allItems.forEach(element => observer.observe(element));
